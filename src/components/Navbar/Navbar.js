@@ -36,9 +36,6 @@ function Navbar() {
       cursor: "pointer",
       transform: "translateY(-10px)",
       transition: "color 0.3s",
-      position: "fixed",
-      top: "30px",
-      right: "30px",
       "&:hover": {
         color: theme.primary,
       },
@@ -142,7 +139,6 @@ function Navbar() {
           className={classes.navMenu}
           onClick={handleDrawerOpen}
           aria-label="Menu"
-          id="navicon"
         />
       </div>
       <Drawer
@@ -198,33 +194,28 @@ function Navbar() {
             </Fade>
 
             <Fade left>
-              <NavLink
-                to="/#education"
-                smooth={true}
-                spy="true"
-                duration={2000}
-              >
+              <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Education</span>
+                  <span className={classes.drawerLinks}>Resume</span>
                 </div>
               </NavLink>
             </Fade>
 
             <Fade left>
-              <NavLink to="/#skills" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#services" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <BsFillGearFill className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Skills</span>
+                  <span className={classes.drawerLinks}>Services</span>
                 </div>
               </NavLink>
             </Fade>
 
             <Fade left>
-              <NavLink to="/#projects" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#blog" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Projects</span>
+                  <span className={classes.drawerLinks}>Blog</span>
                 </div>
               </NavLink>
             </Fade>

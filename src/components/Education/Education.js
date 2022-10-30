@@ -12,7 +12,7 @@ function Education() {
   return (
     <div
       className="education"
-      id="education"
+      id="resume"
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="education-body">

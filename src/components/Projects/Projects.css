@@ -33,13 +33,11 @@
 }
 
 .projects--bodyContainer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
     justify-content: center;
-    grid-gap: 2.5rem;
-    width: 90%;
-    margin: auto;
+    gap: 4.5rem;
+    width: 100%;
 }
 
 .projects--viewAll {
@@ -75,7 +73,7 @@
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
     .projects--bodyContainer {
         display: flex;
         flex-direction: column;
